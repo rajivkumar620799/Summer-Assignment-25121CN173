@@ -1,0 +1,2 @@
+// ignoring all the files which ends with .exe
+*.exe

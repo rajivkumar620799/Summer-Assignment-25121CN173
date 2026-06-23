@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int fibonacciSerires(int n) {
+    if (n <= 1) return n;
+    return fibonacciSerires(n - 1) + fibonacciSerires(n - 2);
+}
+
+int main(){
+    int n;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    for(int i = 0; i <= n; i++) {
+        cout << fibonacciSerires(i) << " ";
+    }
+    return 0;
+}
